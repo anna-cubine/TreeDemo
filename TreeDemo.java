@@ -63,6 +63,9 @@ class Node{
 		   if (root == null)
             return;
          
+         //Print tree
+         System.out.print(root.value + " ");
+         
          //Move to the left
          preOrderTraversal(root.left);
          
@@ -104,7 +107,7 @@ class Node{
 	   */
 	   public boolean find(Node root, int key){
 		 //implement in here
-		  
+		  return true;
 	   }
 	   
 	   
@@ -117,7 +120,7 @@ class Node{
 	   */
 	   public int getMin(Node root){
          //implement in here
-	      
+	      return 0;
 	   }
 	  
 	  
@@ -130,6 +133,8 @@ class Node{
 	   */
 	   public int getMax(Node root){
          //implement in here
+         
+         return 0;
 	   }
 	   
 	   
@@ -182,8 +187,8 @@ class Node{
 	      t1.insert(90);
 	      t1.insert(22);
 	            
-	      System.out.print("in-order :   ");
-	      t1.inOrderTraversal(t1.root);
+	      System.out.print("pre-order :   ");
+	      t1.preOrderTraversal(t1.root);
 	      System.out.println();
 	           
 	      
