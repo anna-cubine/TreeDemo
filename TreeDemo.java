@@ -143,7 +143,10 @@ class Node{
 	   */
 	   public int getMin(Node root){
          //implement in here
-	      return 0;
+         if (root == null || root.left == null)
+            return root.value;
+         //Move left until getting smallest value
+         return getMin(root.left);
 	   }
 	  
 	  
@@ -218,7 +221,7 @@ class Node{
 	      System.out.println();
          System.out.print("post-order :   ");
          t1.postOrderTraversal(t1.root);
-         
-	      
+         System.out.println();
+	      System.out.println("Min value : " + t1.getMin(t1.root));
 	   }  
 	}
