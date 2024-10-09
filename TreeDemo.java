@@ -159,8 +159,9 @@ class Node{
 	   */
 	   public int getMax(Node root){
          //implement in here
-         
-         return 0;
+         if (root == null || root.right == null)
+            return root.value;
+         return getMax(root.right);
 	   }
 	   
 	   
@@ -223,5 +224,6 @@ class Node{
          t1.postOrderTraversal(t1.root);
          System.out.println();
 	      System.out.println("Min value : " + t1.getMin(t1.root));
+         System.out.println("Max value : " + t1.getMax(t1.root));
 	   }  
 	}
