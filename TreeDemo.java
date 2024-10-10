@@ -223,6 +223,8 @@ class Node{
          System.out.print("post-order :   ");
          t1.postOrderTraversal(t1.root);
          System.out.println();
+         System.out.println("Find 80 : " + t1.find(t1.root, 80));
+         System.out.println("Find 10 : " + t1.find(t1.root, 10));
 	      System.out.println("Min value : " + t1.getMin(t1.root));
          System.out.println("Max value : " + t1.getMax(t1.root));
 	   }  
